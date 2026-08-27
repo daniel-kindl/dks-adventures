@@ -36,10 +36,6 @@ hash = "200f79b635a087841698c85ac7028f0a1fac2cc4ffae1d59ff3f07a94abfe70e"
 metafile = true
 
 [[files]]
-file = "scripts/install-performance.sh"
-hash = "e0dae1ef384dde13303ae9c34f4eadecf623448cb6b49294fc5b60eeb492bd57"
-
-[[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
 hash = "ea258ed5bf495d9017eeadc3cbf9bd67b1e672d843826bc077135548b5bc699e"
 metafile = true
