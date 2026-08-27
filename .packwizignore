@@ -1,0 +1,7 @@
+# Repository-only files excluded from pack exports.
+/README.md
+/AGENTS.md
+/docs/
+/.github/
+/.gitignore
+/.gitattributes
