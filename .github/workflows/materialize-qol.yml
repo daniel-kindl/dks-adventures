@@ -6,6 +6,7 @@ on:
       - feat/v0.1-qol-infrastructure
     paths:
       - .github/workflows/materialize-qol.yml
+      - config/simplebackups-common.toml
 
 permissions:
   contents: write
