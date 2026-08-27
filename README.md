@@ -2,56 +2,67 @@
 
 A curated Minecraft 1.20.1 Forge modpack for a long-term casual single-player world.
 
-The pack is built around a simple loop:
-
 > Explore -> discover -> return home -> improve -> explore again.
 
-## Design goals
+## Status
 
-- Adventure and exploration are the primary activities.
-- The main base stays useful throughout the world.
-- RPG elements add choices without level grinding.
-- Automation is optional and supports base building.
-- Farms and redstone remain available but are never required for normal progression.
-- Short sessions remain worthwhile.
-- World generation and major content become conservative after v1.0.
-- Performance targets mid-range hardware and includes shaders plus Distant Horizons.
+`0.1.0-dev`
 
-See [docs/DESIGN.md](docs/DESIGN.md) for the locked design baseline.
+The current development baseline includes:
+
+- performance, shaders, and Distant Horizons;
+- QoL, recovery, automatic backups, and bundled datapack support;
+- terrain, caves, structures, and optional advancement goals;
+- Tetra, Better Combat, Artifacts, Create, storage, travel, and base-building systems.
+
+Creature, atmosphere, and final balance/configuration passes are still in development. Do not use the current build as the permanent-world release yet.
 
 ## Platform
 
 - Minecraft 1.20.1
-- Forge 47.4.10 (recommended 1.20.1 build)
+- Forge 47.4.10
 - Java 17
 - Packwiz-managed source
 
-## Status
+## Design
 
-`v0.1.0-dev` - repository bootstrap. The first playable test build is not complete yet.
+DK's Adventures prioritizes:
 
-## Development
+- adventure and exploration;
+- a useful permanent home base;
+- RPG-lite equipment progression without level grinding;
+- optional automation instead of mandatory factories;
+- meaningful travel and restrained inventory expansion;
+- useful short sessions without pressure to rush content;
+- stable performance on mid-range hardware.
 
-This repository is the source of truth for the pack. Mod JAR files are not committed directly when Packwiz metadata can reference the upstream distribution.
+Read [docs/DESIGN.md](docs/DESIGN.md) before changing gameplay scope. The selected content and current status are tracked in [docs/MODLIST.md](docs/MODLIST.md).
 
-Useful Packwiz commands:
+## Repository layout
+
+- `mods/` - Packwiz mod metadata.
+- `config/` - Pack-owned runtime configuration and bundled datapacks.
+- `shaderpacks/` - Packwiz-managed shader metadata.
+- `docs/` - design, configuration, performance, world-generation, and mod-selection policy.
+- `.github/workflows/` - validation and reproducible `.mrpack` build checks.
+- `pack.toml` / `index.toml` - Packwiz source of truth.
+
+Third-party mod JARs are not committed when Packwiz can reference their upstream distribution.
+
+## Maintenance
+
+Common operations:
 
 ```text
 packwiz refresh
-packwiz modrinth install <mod>
-packwiz curseforge install <mod>
-packwiz update <mod>
+packwiz update --all
 packwiz modrinth export
 ```
 
-Configuration changes are part of the pack and should be committed with the mod/version change that requires them.
+Every dependency change must keep `packwiz refresh` clean and must produce a valid `.mrpack` in CI.
 
 ## Versioning
 
-- `0.x`: test-world development; world generation can still change.
+- `0.x`: development and test-world releases; world generation can still change.
 - `1.0`: permanent-world-ready baseline.
-- After `1.0`, changes that affect already-generated worlds require explicit review.
-
-## Repository
-
-https://github.com/daniel-kindl/dks-adventures
+- After `1.0`, world-generation and save-compatibility changes require explicit review.
