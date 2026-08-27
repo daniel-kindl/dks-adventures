@@ -4,6 +4,12 @@ A curated Minecraft 1.20.1 Forge modpack for a long-term casual single-player wo
 
 > Explore -> discover -> return home -> improve -> explore again.
 
+## Website
+
+https://daniel-kindl.github.io/dks-adventures/
+
+The landing page is maintained in `site/` and deployed to GitHub Pages from Actions.
+
 ## Status
 
 `0.1.0-dev`
@@ -44,7 +50,8 @@ Read [docs/DESIGN.md](docs/DESIGN.md) before changing gameplay scope. The select
 - `config/` - Pack-owned runtime configuration and bundled datapacks.
 - `shaderpacks/` - Packwiz-managed shader metadata.
 - `docs/` - design, configuration, performance, world-generation, and mod-selection policy.
-- `.github/workflows/` - validation and reproducible `.mrpack` build checks.
+- `site/` - dependency-free GitHub Pages landing page.
+- `.github/workflows/` - validation, reproducible `.mrpack` build checks, and Pages deployment.
 - `pack.toml` / `index.toml` - Packwiz source of truth.
 
 Third-party mod JARs are not committed when Packwiz can reference their upstream distribution.

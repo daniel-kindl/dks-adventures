@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DK's Adventures">
+  <rect width="64" height="64" rx="10" fill="#172019"/>
+  <rect x="7" y="7" width="50" height="50" rx="5" fill="none" stroke="#9eb27e" stroke-width="2"/>
+  <path d="M16 19h8c9 0 14 5 14 13S33 45 24 45h-8V19Zm8 20c5 0 7-2 7-7s-2-7-7-7h-1v14h1Z" fill="#f0ecdf"/>
+  <path d="M39 19h7v10l8-10h8L52 31l11 14h-9l-8-11v11h-7V19Z" fill="#c8885b"/>
+</svg>
