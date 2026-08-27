@@ -37,7 +37,7 @@ metafile = true
 
 [[files]]
 file = "scripts/install-performance.sh"
-hash = "045d15424d409054e25641f012e1d865054a61ea53e64475ebf5243d30e1b146"
+hash = "e0dae1ef384dde13303ae9c34f4eadecf623448cb6b49294fc5b60eeb492bd57"
 
 [[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
