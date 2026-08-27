@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/simplebackups-common.toml"
+hash = "cecf942fa5299bfbd46cd9ce9ed1007895ab2444671300d7a42e75e12c08f0af"
+
+[[files]]
 file = "mods/better-advancements.pw.toml"
 hash = "a536d044622c696e0b8f9645b950fff6027db1002d656bed583f37bc1d36bafa"
 metafile = true
