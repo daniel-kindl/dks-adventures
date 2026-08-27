@@ -2,6 +2,7 @@
 set -euo pipefail
 
 # Pin the v0.1 rendering/performance baseline to known Minecraft 1.20.1 builds.
+# Re-running this script must materialize the same Packwiz dependency set.
 packwiz modrinth add "https://modrinth.com/mod/embeddium/version/UTbfe5d1"
 packwiz modrinth add "https://modrinth.com/mod/modernfix/version/h03ZvjY8"
 packwiz modrinth add "https://modrinth.com/mod/ferrite-core/version/DG5Fn9Sz"
