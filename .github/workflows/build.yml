@@ -1,0 +1,52 @@
+name: Build modpack
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.6'
+          cache: false
+
+      - name: Install pinned Packwiz
+        run: |
+          go install github.com/packwiz/packwiz@dfd8b68a4796c763e25bad50265ea1f1233e24f1
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Verify Packwiz index is current
+        run: |
+          packwiz refresh
+          git diff --exit-code -- pack.toml index.toml mods shaderpacks
+
+      - name: Export Modrinth pack
+        run: packwiz modrinth export --output /tmp/dks-adventures.mrpack
+
+      - name: Verify exported manifest
+        run: |
+          python - <<'PY'
+          import json
+          import zipfile
+
+          path = '/tmp/dks-adventures.mrpack'
+          with zipfile.ZipFile(path) as archive:
+              names = set(archive.namelist())
+              assert 'modrinth.index.json' in names
+              manifest = json.loads(archive.read('modrinth.index.json'))
+
+          assert manifest['game'] == 'minecraft'
+          assert manifest['versionId'] == '0.1.0-dev'
+          assert manifest['dependencies']['minecraft'] == '1.20.1'
+          assert manifest['dependencies']['forge'] == '47.4.10'
+          assert manifest['files'], 'exported pack must contain managed files'
+          print(f"validated {len(manifest['files'])} managed files")
+          PY
