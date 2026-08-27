@@ -8,6 +8,7 @@ on:
       - pack.toml
       - mods/oculus.pw.toml
       - scripts/install-performance.sh
+      - .packwizignore
       - .github/workflows/materialize-performance.yml
 
 permissions:
