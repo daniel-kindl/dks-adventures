@@ -20,8 +20,23 @@ hash = "0cbc4b2c6b58b7a94f030ae84f18057e5dc78a17bad429f40b8884926a6ab233"
 metafile = true
 
 [[files]]
+file = "mods/artifacts.pw.toml"
+hash = "2de33e7d757cfa1108b05247cb59f6db2f08000af824da328322d78cdb7c4c4d"
+metafile = true
+
+[[files]]
+file = "mods/balm.pw.toml"
+hash = "12c4913f51659fc1c0978004f411d9d9b878f589367e4fbe17ca5da60acbbce8"
+metafile = true
+
+[[files]]
 file = "mods/better-advancements.pw.toml"
 hash = "a536d044622c696e0b8f9645b950fff6027db1002d656bed583f37bc1d36bafa"
+metafile = true
+
+[[files]]
+file = "mods/better-combat.pw.toml"
+hash = "52b4f29eb4a4392ef085617292842dc9fc84d86c318da5ce470b24eab77f6bdc"
 metafile = true
 
 [[files]]
@@ -35,8 +50,18 @@ hash = "c122e1213dd6d4004e263a2b36dea1e701c9e2179c9496b279bc07e4e533f263"
 metafile = true
 
 [[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "e3dd03e7fec88831974857e2cdded54dd5c5bdcaa3f6d6248c2800e82db4dd41"
+metafile = true
+
+[[files]]
 file = "mods/comforts.pw.toml"
 hash = "a2c5d820180d2610e5017e3f08957010e30cf05d50ee3180272dac6f969260cf"
+metafile = true
+
+[[files]]
+file = "mods/create.pw.toml"
+hash = "fb5c251cf4997fa65ca043bab7c9ecbd02e108031584a3e26276b77d212de23c"
 metafile = true
 
 [[files]]
@@ -60,6 +85,11 @@ hash = "41ead83bf994e2053dc7560e1d22f97a59f6c3b0500237b73583bb0dab6cbdb4"
 metafile = true
 
 [[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "a21b5d4f95cf3c7cbf704bb0b42138ec9271663a5a2c0ed7b9601e4bf179604e"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "902bac905b93271f02bd0951a22bac06a3da24f5c237fcaeb469e14a7679e508"
 metafile = true
@@ -80,8 +110,23 @@ hash = "5d03d20b037a8b7a4765ded0e25146fc970964be46401dff5f9b1059875084e8"
 metafile = true
 
 [[files]]
+file = "mods/map-atlases-forge.pw.toml"
+hash = "1f345a51ab8aeee58612ddf5fa844afae27338acfdcabcfda56383b5b7c848ea"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 hash = "5f68d67accdd7dffc8df29d7ef14b90ac4373226879485f1f8da5b74e108894f"
+metafile = true
+
+[[files]]
+file = "mods/moonlight.pw.toml"
+hash = "1f862d7186e52e9bc96c4ec19ab62d2af9fffdd5dc056176f4be7ae4015345c0"
+metafile = true
+
+[[files]]
+file = "mods/mutil.pw.toml"
+hash = "2128a4650b15b67572ad3d611b3a323fc23c16c4ea87c9fafe0bd95abeb58032"
 metafile = true
 
 [[files]]
@@ -95,6 +140,11 @@ hash = "be48890d990e03c639c5636c79bfa74bbd531c49a80487507984899c386a0bd9"
 metafile = true
 
 [[files]]
+file = "mods/playeranimator.pw.toml"
+hash = "765987a78e5d8c782d0da2de99998b43b5907d6c41347d3804045ad109e4a586"
+metafile = true
+
+[[files]]
 file = "mods/quark.pw.toml"
 hash = "4eb683644ee4e38e00b06df946b71ad8fedaa860fcabbd91ec6ceb71c65b8d81"
 metafile = true
@@ -105,8 +155,43 @@ hash = "18c304a838605e5142389c641db248671131ec25d73d08e3835ea9f6f634632f"
 metafile = true
 
 [[files]]
+file = "mods/sophisticated-backpacks.pw.toml"
+hash = "62885ac418449fc267d956bbb804d875c74b6eabf98b548a43f9fa740d75c2be"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-core.pw.toml"
+hash = "6a89251bae4eebf942681cdb5cf017f051e2c62cb953ea72aa2d9f93c495454e"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage.pw.toml"
+hash = "a59d27eba58d24698ea2a3d0a41d5486f834ce8c9fa4c124633e829ee401ae71"
+metafile = true
+
+[[files]]
+file = "mods/storagedrawers.pw.toml"
+hash = "ff765c8249ef581bc6eef2ab9304f519aeec2552dc7a57760b7cd88eadd2685d"
+metafile = true
+
+[[files]]
+file = "mods/supplementaries.pw.toml"
+hash = "168b3ee3fa2fe18f712c593d9d90e8b3a8a6a10564376af98bcc6f9719506641"
+metafile = true
+
+[[files]]
 file = "mods/tectonic.pw.toml"
 hash = "4dfde3652243cfdfe5ee680d783204b4894420484bfaf38e6163302aa13bf6fd"
+metafile = true
+
+[[files]]
+file = "mods/tetra.pw.toml"
+hash = "dde4ea614488002450f72c587e4c6ed1b939e4a934ded3b98aae621a146b71a7"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "ff646e2f218fe9b5094b835855949b70f3f528f0d12ce2401455f60ee9017dbb"
 metafile = true
 
 [[files]]
