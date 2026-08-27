@@ -13,14 +13,23 @@ This file tracks the intended DK's Adventures v1 scope. Exact versions are pinne
 
 ## Exploration and world
 
-| Mod | Status | Role |
+| Mod/datapack | Status | Role |
 | --- | --- | --- |
-| Tectonic | Locked | Terrain generation |
-| Alex's Caves | Locked | Rare underground destinations |
-| Dungeons & Taverns | Locked | Vanilla-style structures |
-| Selected YUNG's Better mods | Locked | Improve vanilla structures |
-| When Dungeons Arise | Test | Large destination structures; density must be tuned |
-| Aquamirae | Test | Ocean adventure content |
+| Tectonic 3.0.17 | Pinned v0.1 | Terrain generation |
+| Alex's Caves 2.0.2 | Pinned v0.1 | Six rare underground destinations |
+| Citadel 2.6.1 | Pinned v0.1 | Alex's Caves dependency |
+| Dungeons & Taverns 3.0.3.f | Pinned v0.1/Paxi | Main additional structure layer |
+| YUNG's Better Dungeons 1.20-Forge-4.0.4 | Pinned v0.1 | Dungeon overhaul |
+| YUNG's Better Mineshafts 1.20-Forge-4.0.4 | Pinned v0.1 | Mineshaft overhaul |
+| YUNG's Better Strongholds 1.20-Forge-4.0.3 | Pinned v0.1 | Stronghold overhaul |
+| YUNG's Better Desert Temples 1.20-Forge-3.0.3 | Pinned v0.1 | Desert temple overhaul |
+| YUNG's Better Jungle Temples 1.20-Forge-2.0.5 | Pinned v0.1 | Jungle temple overhaul |
+| YUNG's Better Ocean Monuments 1.20-Forge-3.0.4 | Pinned v0.1 | Ocean monument overhaul |
+| YUNG's Better Nether Fortresses 1.20-Forge-2.0.6 | Pinned v0.1 | Nether fortress overhaul |
+| When Dungeons Arise | Deferred test | Add only if test worlds need more large destinations |
+| Aquamirae | Deferred test | Possible ocean-adventure expansion |
+
+See [WORLDGEN.md](WORLDGEN.md) for the world-generation policy and test gate.
 
 ## Equipment and combat
 
@@ -64,7 +73,7 @@ This file tracks the intended DK's Adventures v1 scope. Exact versions are pinne
 
 | Mod/datapack | Status | Role |
 | --- | --- | --- |
-| BlazeandCave's Advancements Pack | Locked | 1000+ optional goals |
+| BlazeandCave's Advancements Pack 1.16.2 | Pinned v0.1/Paxi | 900+ added optional advancement goals |
 | Better Advancements 0.6.0.73 | Pinned v0.1 | Better advancement UI |
 | EMI 1.1.22+1.20.1+forge | Pinned v0.1 | Recipe/item viewer |
 | Jade 11.13.3 | Pinned v0.1 | Lightweight contextual information |
