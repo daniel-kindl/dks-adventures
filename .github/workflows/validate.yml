@@ -1,0 +1,44 @@
+name: Validate modpack
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate TOML
+        run: |
+          python - <<'PY'
+          import pathlib
+          import tomllib
+
+          files = [pathlib.Path('pack.toml'), pathlib.Path('index.toml')]
+          files.extend(pathlib.Path('.').rglob('*.pw.toml'))
+          for path in files:
+              with path.open('rb') as handle:
+                  tomllib.load(handle)
+              print(f'validated {path}')
+          PY
+
+      - name: Reject committed mod jars
+        run: |
+          if find . -type f -name '*.jar' -print -quit | grep -q .; then
+            echo 'Third-party mod JAR files must not be committed.' >&2
+            find . -type f -name '*.jar' -print
+            exit 1
+          fi
+
+      - name: Validate required repository files
+        run: |
+          test -f README.md
+          test -f pack.toml
+          test -f index.toml
+          test -f docs/DESIGN.md
+          test -f docs/MODLIST.md
+          test -f docs/CONFIGURATION.md
