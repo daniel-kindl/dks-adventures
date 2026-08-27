@@ -70,9 +70,9 @@ This file tracks the intended DK's Adventures v1 scope. Exact versions are pinne
 
 | Component | Status | Role |
 | --- | --- | --- |
-| Complementary Reimagined | Locked | Default shader |
-| Oculus | Locked | Forge shader support |
-| Distant Horizons | Locked | Long-distance terrain |
+| Complementary Reimagined r5.8.1 | Pinned v0.1 | Default shader |
+| Oculus 1.8.0 | Pinned v0.1 | Forge shader support |
+| Distant Horizons 3.2.0-b | Pinned v0.1 | Long-distance terrain |
 | Sound Physics Remastered | Locked | Spatial cave/world acoustics |
 | AmbientSounds | Benchmark | Environmental ambience |
 
@@ -80,11 +80,13 @@ This file tracks the intended DK's Adventures v1 scope. Exact versions are pinne
 
 | Mod | Status |
 | --- | --- |
-| Embeddium | Locked |
-| ModernFix | Locked |
-| FerriteCore | Locked |
-| Entity Culling | Locked |
-| ImmediatelyFast | Locked |
+| Embeddium 0.3.31+mc1.20.1 | Pinned v0.1 |
+| ModernFix 5.24.0+mc1.20.1 | Pinned v0.1 |
+| FerriteCore 6.0.1 | Pinned v0.1 |
+| Entity Culling 1.10.4 | Pinned v0.1 |
+| ImmediatelyFast 1.2.4+1.20.1 | Pinned v0.1 |
+
+See [PERFORMANCE.md](PERFORMANCE.md) for the initial graphics and benchmark settings.
 
 ## Utility
 
