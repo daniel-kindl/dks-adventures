@@ -48,7 +48,13 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.toml mods config resourcepacks shaderpacks 2>/dev/null || true
-          git diff --cached --quiet && exit 0
+          git add index.toml mods
+          [ -d config ] && git add config || true
+          [ -d resourcepacks ] && git add resourcepacks || true
+          [ -d shaderpacks ] && git add shaderpacks || true
+          if git diff --cached --quiet; then
+            echo "No generated changes"
+            exit 0
+          fi
           git commit -m "build: add v0.1 gameplay and base dependencies"
           git push origin HEAD:feat/v0.1-gameplay-base
