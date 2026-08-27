@@ -8,7 +8,8 @@ This file tracks the intended DK's Adventures v1 scope. Exact versions are pinne
 | --- | --- | --- |
 | Minecraft 1.20.1 | Locked | Game version |
 | Forge 47.4.10 | Locked | Mod loader |
-| Paxi | Planned | Load bundled datapacks/resource packs for new worlds |
+| Paxi 1.20-Forge-4.0 | Pinned v0.1 | Load bundled datapacks/resource packs for new worlds |
+| YUNG's API 1.20-Forge-4.0.6 | Pinned v0.1 | Shared dependency for Paxi/YUNG mods |
 
 ## Exploration and world
 
@@ -44,7 +45,7 @@ This file tracks the intended DK's Adventures v1 scope. Exact versions are pinne
 | --- | --- | --- |
 | Farmer's Delight | Locked | Farming and cooking |
 | Supplementaries | Locked | Functional/decorative Vanilla+ content |
-| Quark + Zeta | Locked | Curated Vanilla+ and QoL |
+| Quark 4.0-462 + Zeta 1.0-31 | Pinned v0.1/configure | Curated Vanilla+ and QoL |
 | Create | Locked | Optional base engineering |
 
 ## Storage and travel
@@ -56,15 +57,17 @@ This file tracks the intended DK's Adventures v1 scope. Exact versions are pinne
 | Sophisticated Backpacks | Locked/configure | Expedition storage without portable-factory behavior |
 | Map Atlases | Locked | Exploration-oriented mapping |
 | Waystones | Locked/configure | Earned travel network |
-| Comforts | Locked | Sleeping bags without moving home spawn |
-| Carry On | Locked/configure | Small physical QoL interactions |
+| Comforts 6.4.0+1.20.1 | Pinned v0.1 | Sleeping bags without moving home spawn |
+| Carry On 2.1.2.7 | Pinned v0.1/configure | Small physical QoL interactions |
 
 ## Goals and UI
 
 | Mod/datapack | Status | Role |
 | --- | --- | --- |
 | BlazeandCave's Advancements Pack | Locked | 1000+ optional goals |
-| Better Advancements | Locked | Better advancement UI |
+| Better Advancements 0.6.0.73 | Pinned v0.1 | Better advancement UI |
+| EMI 1.1.22+1.20.1+forge | Pinned v0.1 | Recipe/item viewer |
+| Jade 11.13.3 | Pinned v0.1 | Lightweight contextual information |
 
 ## Atmosphere and graphics
 
@@ -88,12 +91,14 @@ This file tracks the intended DK's Adventures v1 scope. Exact versions are pinne
 
 See [PERFORMANCE.md](PERFORMANCE.md) for the initial graphics and benchmark settings.
 
-## Utility
+## Recovery and maintenance
 
-- Automatic backup mod: select and pin during v0.1 assembly.
-- Grave/death-recovery mod: select and pin during v0.1 assembly.
-- Recipe viewer: select between JEI/EMI based on compatibility.
-- Lightweight information overlay: evaluate Jade during v0.1.
+| Mod | Status | Role |
+| --- | --- | --- |
+| Simple Backups 1.20.1-3.1.24 | Pinned/configured v0.1 | Automatic rotating world backups |
+| GraveStone Mod 1.0.32 | Pinned v0.1 | Recoverable inventory after death |
+
+Simple Backups uses full backups every 60 minutes, retains at most 12 archives, and caps the backup directory at 15 GB. This intentionally favors recovery reliability over incremental-storage efficiency.
 
 ## Deferred
 
