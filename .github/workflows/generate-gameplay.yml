@@ -1,0 +1,54 @@
+name: Generate gameplay metadata
+
+on:
+  push:
+    branches: [feat/v0.1-gameplay-base]
+    paths: [.github/workflows/generate-gameplay.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: feat/v0.1-gameplay-base
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.6'
+          cache: false
+
+      - name: Install pinned Packwiz
+        run: |
+          go install github.com/packwiz/packwiz@dfd8b68a4796c763e25bad50265ea1f1233e24f1
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Add gameplay and base mods
+        run: |
+          packwiz modrinth add tetra -y
+          packwiz modrinth add better-combat -y
+          packwiz modrinth add artifacts -y
+          packwiz modrinth add farmers-delight -y
+          packwiz modrinth add supplementaries -y
+          packwiz modrinth add create -y
+          packwiz modrinth add storagedrawers -y
+          packwiz modrinth add sophisticated-storage -y
+          packwiz modrinth add sophisticated-backpacks -y
+          packwiz modrinth add waystones -y
+          packwiz modrinth add map-atlases-forge -y
+          packwiz refresh
+
+      - name: Commit generated Packwiz metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.toml mods config resourcepacks shaderpacks 2>/dev/null || true
+          git diff --cached --quiet && exit 0
+          git commit -m "build: add v0.1 gameplay and base dependencies"
+          git push origin HEAD:feat/v0.1-gameplay-base
