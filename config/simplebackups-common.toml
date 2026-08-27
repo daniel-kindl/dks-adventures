@@ -1,0 +1,28 @@
+# DK's Adventures backup policy.
+# Keep this conservative: every retained archive is independently restorable.
+enabled = true
+backupType = "FULL_BACKUPS"
+saveAll = true
+fullBackupTimer = 525960
+backupsToKeep = 12
+timer = 60
+compressionLevel = -1
+sendMessages = false
+maxDiskSize = "15 GB"
+outputPath = "simplebackups"
+noPlayerBackups = false
+createSubDirs = true
+useTickCounter = false
+
+[error_handling]
+collectErrors = true
+deleteUnfinishedBackup = true
+
+[to_ignore]
+ignored_paths = []
+ignored_files = []
+ignored_files_regex = ""
+
+[mod_compat]
+mc2discord = false
+onlyFavorites = false
