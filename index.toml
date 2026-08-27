@@ -1,8 +1,23 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/paxi/datapacks/blazeandcaves-advancements-pack.pw.toml"
+hash = "9ba27f4b83b2653af61c9d642a77ba842be25c51aac8c1e24385c5169ceb9cdd"
+metafile = true
+
+[[files]]
+file = "config/paxi/datapacks/dungeons-and-taverns.pw.toml"
+hash = "535a5e3f3334e2c6a473a94d438db58cc754b314835d4f8cb107a9a306d71ac2"
+metafile = true
+
+[[files]]
 file = "config/simplebackups-common.toml"
 hash = "cecf942fa5299bfbd46cd9ce9ed1007895ab2444671300d7a42e75e12c08f0af"
+
+[[files]]
+file = "mods/alexs-caves.pw.toml"
+hash = "0cbc4b2c6b58b7a94f030ae84f18057e5dc78a17bad429f40b8884926a6ab233"
+metafile = true
 
 [[files]]
 file = "mods/better-advancements.pw.toml"
@@ -12,6 +27,11 @@ metafile = true
 [[files]]
 file = "mods/carry-on.pw.toml"
 hash = "ba1bdad41e3c9ec131330f048fc6f9bcb753ca3e9bfa1e41d60d6ca11afbc2e6"
+metafile = true
+
+[[files]]
+file = "mods/citadel.pw.toml"
+hash = "c122e1213dd6d4004e263a2b36dea1e701c9e2179c9496b279bc07e4e533f263"
 metafile = true
 
 [[files]]
@@ -85,8 +105,48 @@ hash = "18c304a838605e5142389c641db248671131ec25d73d08e3835ea9f6f634632f"
 metafile = true
 
 [[files]]
+file = "mods/tectonic.pw.toml"
+hash = "4dfde3652243cfdfe5ee680d783204b4894420484bfaf38e6163302aa13bf6fd"
+metafile = true
+
+[[files]]
 file = "mods/yungs-api.pw.toml"
 hash = "152c6732da180e958fb29f492bae2e468d4dfd423ce4d3d0d31ef31c2eec6c61"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-desert-temples.pw.toml"
+hash = "532f07775974b695733981b2548859d3bc76c743781a5da5035d40fd6e485ab0"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-dungeons.pw.toml"
+hash = "c35112cced2eec8e5782c5c4327ae31bce16cc1356c75e52000053e890e0f0c1"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-jungle-temples.pw.toml"
+hash = "8c8b596c0e8f7366e30ee6edbd591fba9ef16741c25a505e64de9a299cd72e80"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-mineshafts.pw.toml"
+hash = "41aa01e9d0507d3131eb5fd2f6d8f2b7c54237e30a94e2a3bf6f52915cb8a688"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-nether-fortresses.pw.toml"
+hash = "05f825a655bc94af6ab592d13c396b60c818cfc65ff2528e206e7a40a180e210"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-ocean-monuments.pw.toml"
+hash = "60511ad5628ed8e45a552de171c3330bdcdbd5f86f7047e26b505b7a8c824a47"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-strongholds.pw.toml"
+hash = "18dfe8ada0af83eb86d4b8ff8e202479b7c2ab1ee1f894d9bb07cda1744e8981"
 metafile = true
 
 [[files]]
