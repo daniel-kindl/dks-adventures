@@ -46,7 +46,7 @@ jobs:
           packwiz curseforge add "https://www.curseforge.com/minecraft/mc-mods/zeta/files/7335229"
           packwiz curseforge add "https://www.curseforge.com/minecraft/mc-mods/quark/files/6427817"
           packwiz curseforge add "https://www.curseforge.com/minecraft/mc-mods/carry-on/files/4882500"
-          packwiz --non-interactive curseforge add better-advancements
+          packwiz --yes curseforge add better-advancements
           packwiz refresh
 
       - name: Commit generated metadata
