@@ -1,6 +1,21 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/better-advancements.pw.toml"
+hash = "a536d044622c696e0b8f9645b950fff6027db1002d656bed583f37bc1d36bafa"
+metafile = true
+
+[[files]]
+file = "mods/carry-on.pw.toml"
+hash = "ba1bdad41e3c9ec131330f048fc6f9bcb753ca3e9bfa1e41d60d6ca11afbc2e6"
+metafile = true
+
+[[files]]
+file = "mods/comforts.pw.toml"
+hash = "a2c5d820180d2610e5017e3f08957010e30cf05d50ee3180272dac6f969260cf"
+metafile = true
+
+[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "4f9f42729849acf0cc5b5b456bcee2398ba753669f35b873f4b33240ec3abce4"
 metafile = true
@@ -8,6 +23,11 @@ metafile = true
 [[files]]
 file = "mods/embeddium.pw.toml"
 hash = "5ec0c37f3f4ad07a40c10376668bca80334ddb7ad2bab06eb4de8f7aac339c8e"
+metafile = true
+
+[[files]]
+file = "mods/emi.pw.toml"
+hash = "f0b4372343e873512d57e5ee877f37362f8dde8e75771075abe44686509294b9"
 metafile = true
 
 [[files]]
@@ -21,8 +41,18 @@ hash = "902bac905b93271f02bd0951a22bac06a3da24f5c237fcaeb469e14a7679e508"
 metafile = true
 
 [[files]]
+file = "mods/gravestone-mod.pw.toml"
+hash = "6cd5dcc7f8be470d2b9be207783db249235cd8536b4cf0f923c86124b387848a"
+metafile = true
+
+[[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "dcedae8889f7d16757a0c77287ea7accad6afa1f2e41fab0ca5cc8159ad0d237"
+metafile = true
+
+[[files]]
+file = "mods/jade.pw.toml"
+hash = "5d03d20b037a8b7a4765ded0e25146fc970964be46401dff5f9b1059875084e8"
 metafile = true
 
 [[files]]
@@ -33,6 +63,31 @@ metafile = true
 [[files]]
 file = "mods/oculus.pw.toml"
 hash = "200f79b635a087841698c85ac7028f0a1fac2cc4ffae1d59ff3f07a94abfe70e"
+metafile = true
+
+[[files]]
+file = "mods/paxi.pw.toml"
+hash = "be48890d990e03c639c5636c79bfa74bbd531c49a80487507984899c386a0bd9"
+metafile = true
+
+[[files]]
+file = "mods/quark.pw.toml"
+hash = "4eb683644ee4e38e00b06df946b71ad8fedaa860fcabbd91ec6ceb71c65b8d81"
+metafile = true
+
+[[files]]
+file = "mods/simple-backups.pw.toml"
+hash = "ba0c68dbb5d164f5ed3b7a0b15c668b400d1eaca4b03ab4ee0236be24db5e1e4"
+metafile = true
+
+[[files]]
+file = "mods/yungs-api.pw.toml"
+hash = "152c6732da180e958fb29f492bae2e468d4dfd423ce4d3d0d31ef31c2eec6c61"
+metafile = true
+
+[[files]]
+file = "mods/zeta.pw.toml"
+hash = "a9421a7a29ac8ee6e0598ea20025ad2c30e6198b796324184600621743437c91"
 metafile = true
 
 [[files]]
