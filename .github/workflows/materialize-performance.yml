@@ -1,0 +1,49 @@
+name: Materialize performance baseline
+
+on:
+  push:
+    branches:
+      - feat/v0.1-foundation-performance
+    paths:
+      - pack.toml
+      - mods/oculus.pw.toml
+      - scripts/install-performance.sh
+      - .github/workflows/materialize-performance.yml
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/v0.1-foundation-performance
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.6'
+
+      - name: Install pinned Packwiz
+        run: |
+          go install github.com/packwiz/packwiz@dfd8b68a4796c763e25bad50265ea1f1233e24f1
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Materialize Packwiz metadata
+        run: bash scripts/install-performance.sh
+
+      - name: Commit generated metadata
+        run: |
+          if git diff --quiet && git diff --cached --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo 'Pack metadata is already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add pack.toml index.toml mods shaderpacks
+          git commit -m 'build: materialize pinned performance metadata [skip ci]'
+          git push
